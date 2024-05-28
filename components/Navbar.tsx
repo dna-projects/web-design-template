@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Navbar() {
     return (
         <>
-            <nav className='flex flex-row fixed w-full shadow-lg z-50'>
+            <nav className='flex flex-row fixed w-full bg-white shadow-lg z-50'>
 
                 {/* Logo */}
                     <Image
