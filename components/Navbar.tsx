@@ -34,26 +34,26 @@ export default function Navbar() {
                 </div>
 
                 {/* Menu */}
-                <div className='hidden justify-center self-center w-full gap-16 lg:flex'>
-                        <a>
-                            Home
-                        </a>
-                        <a>
-                            About
-                        </a>
-                        <a>
-                            Services
-                        </a>
-                        {/* <a>
-                            Gallery
-                        </a>
-                        <a>
-                            Reviews
-                        </a> */}
-                        <a>
-                            Contact
-                        </a>
-                </div>
+                <nav className='hidden justify-center self-center w-full gap-16 lg:flex'>
+                    <Link href="/">
+                        <div>Home</div>
+                    </Link>
+                    <Link href="/about">
+                        <div>About</div>
+                    </Link>
+                    <Link href="/services">
+                        <div>Services</div>
+                    </Link>
+                    {/* <Link href="/gallery">
+                        <div>Gallery</div>
+                    </Link>
+                    <Link href="/reviews">
+                        <div>Reviews</div>
+                    </Link> */}
+                    <Link href="/contact">
+                        <div>Contact</div>
+                    </Link>
+                </nav>
 
             </nav>
         </>
