@@ -24,10 +24,18 @@ export default function Footer() {
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>INFORMATION</h2>
                             <div className='w-[90px] h-0.5 bg-[#7598ED] mb-3'></div>
-                            <div className='mb-3'>Home</div>
-                            <div className='mb-3'>About Us</div>
-                            <div className='mb-3'>Services</div>
-                            <div>Contact</div>
+                            <div className='mb-3'>
+                                <Link href='/' className='duration-100 hover:text-[#A0A0A0]'>Home</Link>
+                            </div>
+                            <div className='mb-3'>
+                                <Link href='/about' className='duration-100 hover:text-[#A0A0A0]'>About Us</Link>
+                            </div>
+                            <div className='mb-3'>
+                                <Link href='/services' className='duration-100 hover:text-[#A0A0A0]'>Services</Link>
+                            </div>
+                            <div>
+                                <Link href='/contact' className='duration-100 hover:text-[#A0A0A0]'>Contact</Link>
+                            </div>
                         </div>
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>SERVICES</h2>
@@ -44,8 +52,8 @@ export default function Footer() {
                                 <p>Second Address Line</p>
                                 <p>City State Zip</p>
                             </div>
-                            <div className='mb-3'>(555) 555-5555</div>
-                            <div>Click to Email</div>
+                            <a href='tel:555-555-5555' className='mb-3 duration-100 hover:text-[#A0A0A0]'>(555) 555-5555</a>
+                            <a href='mailto:help@companyname.app' className='duration-100 hover:text-[#A0A0A0]'>Click to Email</a>
                         </div>
                     </div>
                 </div>

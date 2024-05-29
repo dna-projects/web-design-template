@@ -35,13 +35,13 @@ export default function Navbar() {
 
                 {/* Menu */}
                 <nav className='hidden justify-center self-center w-full gap-16 lg:flex'>
-                    <Link href="/">
+                    <Link href='/'>
                         <div>Home</div>
                     </Link>
-                    <Link href="/about">
+                    <Link href='/about'>
                         <div>About</div>
                     </Link>
-                    <Link href="/services">
+                    <Link href='/services'>
                         <div>Services</div>
                     </Link>
                     {/* <Link href="/gallery">
@@ -50,7 +50,7 @@ export default function Navbar() {
                     <Link href="/reviews">
                         <div>Reviews</div>
                     </Link> */}
-                    <Link href="/contact">
+                    <Link href='/contact'>
                         <div>Contact</div>
                     </Link>
                 </nav>
