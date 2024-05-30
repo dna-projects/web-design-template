@@ -35,23 +35,29 @@ export default function Navbar() {
 
                 {/* Menu */}
                 <nav className='hidden justify-center self-center w-full gap-16 lg:flex'>
-                    <Link href='/'>
+                    <Link href='/' className='group flex flex-col'>
                         <div>Home</div>
+                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
                     </Link>
-                    <Link href='/about'>
+                    <Link href='/about' className='group flex flex-col'>
                         <div>About</div>
+                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
                     </Link>
-                    <Link href='/services'>
+                    <Link href='/services' className='group flex flex-col'>
                         <div>Services</div>
+                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
                     </Link>
-                    {/* <Link href="/gallery">
+                    {/* <Link href='/gallery' className='group flex flex-col'>
                         <div>Gallery</div>
+                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
                     </Link>
-                    <Link href="/reviews">
+                    <Link href='/reviews' className='group flex flex-col'>
                         <div>Reviews</div>
+                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
                     </Link> */}
-                    <Link href='/contact'>
+                    <Link href='/contact' className='group flex flex-col'>
                         <div>Contact</div>
+                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
                     </Link>
                 </nav>
 
