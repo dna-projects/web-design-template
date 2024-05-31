@@ -11,7 +11,7 @@ const config: Config = {
       backgroundImage: {
 
       },
-      screens: {
+      screen: {
         'xs': '512px',
         '3xl': '1792px',
         '4xl': '2048px',

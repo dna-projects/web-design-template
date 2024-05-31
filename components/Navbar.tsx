@@ -1,10 +1,16 @@
+'use client'
+
 import Link from 'next/link';
 import Image from 'next/image'
+import { usePathname } from 'next/navigation';
+
 
 export default function Navbar() {
+    const currentPath = usePathname()
+
     return (
         <>
-            <nav className='flex flex-row fixed w-full bg-white shadow-lg z-50'>
+            <nav className='flex flex-row fixed w-full h-[85px] bg-white shadow-lg z-50'>
 
                 {/* Logo */}
                     <Image
@@ -13,7 +19,7 @@ export default function Navbar() {
                         width={150}
                         height={150}
                         priority={true}
-                        className='w-[55px] m-5'
+                        className='self-center w-[45px] h-[45px] m-4'
                     />
 
                 {/* Hamburger Menu */}
@@ -34,32 +40,32 @@ export default function Navbar() {
                 </div>
 
                 {/* Menu */}
-                <nav className='hidden justify-center self-center w-full gap-16 lg:flex'>
-                    <Link href='/' className='group flex flex-col'>
+                <div className='hidden justify-center self-center w-full gap-16 lg:flex'>
+                    <Link href='/' className={`group flex flex-col ${currentPath === '/' ? 'active' : ''}`}>
                         <div>Home</div>
-                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
+                        <div className={`h-0.5 bg-[#7598ED] transition-width duration-300 ${currentPath === '/' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                     </Link>
-                    <Link href='/about' className='group flex flex-col'>
+                    <Link href='/about' className={`group flex flex-col ${currentPath === '/about' ? 'active' : ''}`}>
                         <div>About</div>
-                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
+                        <div className={`h-0.5 bg-[#7598ED] transition-width duration-300 ${currentPath === '/about' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                     </Link>
-                    <Link href='/services' className='group flex flex-col'>
+                    <Link href='/services' className={`group flex flex-col ${currentPath === '/services' ? 'active' : ''}`}>
                         <div>Services</div>
-                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
+                        <div className={`h-0.5 bg-[#7598ED] transition-width duration-300 ${currentPath === '/services' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                     </Link>
-                    {/* <Link href='/gallery' className='group flex flex-col'>
+                    {/* <Link href='/gallery' className={`group flex flex-col ${currentPath === '/gallery' ? 'active' : ''}`}>
                         <div>Gallery</div>
-                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
+                        <div className={`h-0.5 bg-[#7598ED] transition-width duration-300 ${currentPath === '/gallery' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                     </Link>
-                    <Link href='/reviews' className='group flex flex-col'>
+                    <Link href='/reviews' className={`group flex flex-col ${currentPath === '/reviews' ? 'active' : ''}`}>
                         <div>Reviews</div>
-                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
+                        <div className={`h-0.5 bg-[#7598ED] transition-width duration-300 ${currentPath === '/reviews' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                     </Link> */}
-                    <Link href='/contact' className='group flex flex-col'>
+                    <Link href='/contact' className={`group flex flex-col ${currentPath === '/contact' ? 'active' : ''}`}>
                         <div>Contact</div>
-                        <div className='w-0 h-0.5 bg-[#7598ED] transition-width duration-300 group-hover:w-full'></div>
+                        <div className={`h-0.5 bg-[#7598ED] transition-width duration-300 ${currentPath === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                     </Link>
-                </nav>
+                </div>
 
             </nav>
         </>
