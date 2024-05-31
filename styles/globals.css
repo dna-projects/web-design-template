@@ -5,11 +5,3 @@
 body {
   margin: 0;
 }
-
-.banner-image {
-  /* background-image: url('/banner-background1.png'); */
-  background-image: url('/banner-background2.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-}
