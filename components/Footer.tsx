@@ -23,7 +23,7 @@ export default function Footer() {
                     <div className='flex flex-wrap justify-between self-center w-full max-w-[320px] sm:max-w-[600px] gap-14 md:flex-row'>
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>INFORMATION</h2>
-                            <div className='w-[90px] h-0.5 bg-[#7598ED] mb-3'></div>
+                            <div className='w-[90px] h-0.5 bg-primary mb-3'></div>
                             <div className='mb-3'>
                                 <Link href='/' className='duration-100 hover:text-[#A0A0A0]'>Home</Link>
                             </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                         </div>
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>SERVICES</h2>
-                            <div className='w-[90px] h-0.5 bg-[#7598ED] mb-3'></div>
+                            <div className='w-[90px] h-0.5 bg-primary mb-3'></div>
                             <div className='mb-3'>Service 1</div>
                             <div className='mb-3'>Service 2</div>
                             <div>Service 3</div>

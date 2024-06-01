@@ -11,6 +11,9 @@ const config: Config = {
       backgroundImage: {
 
       },
+      colors: {
+        'primary': '#7598ED',
+      },
       screen: {
         'xs': '512px',
         '3xl': '1792px',
