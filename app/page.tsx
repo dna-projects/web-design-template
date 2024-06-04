@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import OverlappingImages from '../components/OverlappingImages'
 
 import Link from 'next/link';
 import Image from "next/image";
@@ -75,16 +76,17 @@ export default function Home() {
                   <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-[175px] mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE SERVICES</button>
                 </Link>
               </div>
-              <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
+              {/* <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
                 <Image
-                  src='/home-about.jpg'
+                  src='/home-service-bottom.jpg'
                   alt=''
                   width={1920}
                   height={1920}
                   priority={true}
                   className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl shadow-xl lg:max-h-full'
                 />
-              </div>
+              </div> */}
+              <OverlappingImages />
             </div>
 
             {/* Reviews */}
