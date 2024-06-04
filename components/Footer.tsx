@@ -11,12 +11,12 @@ export default function Footer() {
                     {/* Logo */}
                     <div className='flex justify-center self-center w-96 mb-10 lg:justify-start lg:self-start'>
                         <Image
-                            src='/example-logo.png'
+                            src='/logo-example-white.png'
                             alt=''
-                            width={150}
-                            height={150}
+                            width={500}
+                            height={500}
                             priority={true}
-                            className='w-[100px] h-[100px]'
+                            className='w-[320px] h-[80px]'
                         />
                     </div>
                     {/* Footer content */}
@@ -46,7 +46,7 @@ export default function Footer() {
                         </div>
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>CONTACT</h2>
-                            <div className='w-[90px] h-0.5 bg-[#7598ED] mb-3'></div>
+                            <div className='w-[90px] h-0.5 bg-primary mb-3'></div>
                             <div className='flex flex-col leading-tight mb-3'>
                                 <p>First Address Line</p>
                                 <p>Second Address Line</p>
@@ -60,7 +60,7 @@ export default function Footer() {
 
                 {/* DNA Labs info */}
                 <div className='flex flex-col self-center text-center lg:flex-row'>
-                    <div>Designed and Developed by <span className='text-[#7598ED] mr-1'>DNA Labs Web Designs</span></div>
+                    <div>Designed and Developed by <span className='text-primary mr-1'>DNA Labs Web Designs</span></div>
                     <div>Copyright 2023 - Present</div>
                 </div>
             </div>

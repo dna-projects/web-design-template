@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         'primary': '#7598ED',
+        // 'primary': '#eab308',
       },
       screens: {
         'xs': '512px',

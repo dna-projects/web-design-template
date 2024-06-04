@@ -14,12 +14,12 @@ export default function Navbar() {
                 <div className='flex flex-row w-full max-w-screen-2xl'>
                     {/* Logo */}
                         <Image
-                            src='/example-logo.png'
+                            src='/logo-example-black.png'
                             alt=''
-                            width={150}
-                            height={150}
+                            width={500}
+                            height={500}
                             priority={true}
-                            className='self-center w-[45px] h-[45px] m-4 2xl:w-[65px] 2xl:h-[65px] 2xl:mx-0'
+                            className='self-center w-[180px] h-[45px] m-4 2xl:w-[260px] 2xl:h-[65px] '
                         />
 
                     {/* Hamburger Menu */}
@@ -40,7 +40,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Menu */}
-                    <div className='hidden justify-center self-center w-full gap-16 lg:flex'>
+                    <div className='hidden justify-center self-center w-[63%] gap-16 lg:flex'>
                         <Link href='/' className={`group flex flex-col ${currentPath === '/' ? 'active' : ''}`}>
                             <div>Home</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
