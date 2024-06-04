@@ -40,7 +40,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Menu */}
-                    <div className='hidden justify-center self-center w-[63%] gap-16 lg:flex'>
+                    <div className='hidden justify-center self-center w-[70%] gap-16 lg:flex'>
                         <Link href='/' className={`group flex flex-col ${currentPath === '/' ? 'active' : ''}`}>
                             <div>Home</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
@@ -53,19 +53,20 @@ export default function Navbar() {
                             <div>Services</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/services' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link>
-                        {/* <Link href='/gallery' className={`group flex flex-col ${currentPath === '/gallery' ? 'active' : ''}`}>
+                        <Link href='/gallery' className={`group flex flex-col ${currentPath === '/gallery' ? 'active' : ''}`}>
                             <div>Gallery</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/gallery' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link>
-                        <Link href='/reviews' className={`group flex flex-col ${currentPath === '/reviews' ? 'active' : ''}`}>
+                        {/* <Link href='/reviews' className={`group flex flex-col ${currentPath === '/reviews' ? 'active' : ''}`}>
                             <div>Reviews</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/reviews' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link> */}
-                        <Link href='/contact' className={`group flex flex-col ${currentPath === '/contact' ? 'active' : ''}`}>
-                            <div>Contact</div>
-                            <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
-                        </Link>
                     </div>
+
+                    {/* Contact button */}
+                    <Link href='/contact' className='hidden self-center lg:flex'>
+                        <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-[155px] m-4 py-2 2xl:py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>CONTACT US</button>
+                    </Link>
                 </div>
 
             </nav>
