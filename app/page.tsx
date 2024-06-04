@@ -43,7 +43,7 @@ export default function Home() {
 
             {/* About section */}
             <div className='flex flex-col justify-between mx-auto gap-12 lg:flex-row 2xl:px-0'>
-              <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
+              <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
                 <Image
                   src='/about3.png'
                   alt=''
@@ -75,7 +75,7 @@ export default function Home() {
                   <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-[175px] mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE SERVICES</button>
                 </Link>
               </div>
-              <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
+              <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
                 <Image
                   src='/home-about.jpg'
                   alt=''
