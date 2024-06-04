@@ -43,14 +43,14 @@ export default function Home() {
 
             {/* About section */}
             <div className='flex flex-col justify-between mx-auto gap-12 lg:flex-row 2xl:px-0'>
-              <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
+              <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
                 <Image
                   src='/about3.png'
                   alt=''
                   width={1920}
                   height={1920}
                   priority={true}
-                  className='self-center object-cover w-auto h-full rounded-3xl'
+                  className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl lg:max-h-full'
                 />
               </div>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
@@ -82,7 +82,7 @@ export default function Home() {
                   width={1920}
                   height={1920}
                   priority={true}
-                  className='self-center object-cover w-auto h-full rounded-3xl shadow-xl '
+                  className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl shadow-xl lg:max-h-full'
                 />
               </div>
             </div>
