@@ -6,7 +6,7 @@ import Image from 'next/image'
 //     image: string;
 // };
 
-export default function OverlappingImages() {
+export default function LayeredImages() {
     return (
         <>
             <div className='self-center relative max-w-[550px] w-full h-[420px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>

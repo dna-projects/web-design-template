@@ -1,15 +1,26 @@
 import Navbar from '../components/Navbar'
+import LayeredImages from '../components/LayeredImages'
+import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
-import OverlappingImages from '../components/OverlappingImages'
 
 import Link from 'next/link';
 import Image from "next/image";
 
 export default function Home() {
+
+  // Images for gallery carousel
+  const images = [
+    '/gallery-1.png',
+    '/gallery-2.jpg',
+    '/gallery-3.jpg',
+    '/gallery-4.jpg',
+    '/gallery-5.jpg',
+  ];
+
   return (
     <>
       <Navbar />
-      <main className='flex flex-col'>
+      <main className='flex flex-col text-[#161616]'>
 
 
 
@@ -39,7 +50,7 @@ export default function Home() {
 
 
 
-          {/* Rest of content container */}
+          {/* Rest of content container - first half */}
           <div className='flex flex-col self-center gap-52 px-4 py-52 max-w-screen-2xl'>
 
             {/* About section */}
@@ -56,11 +67,11 @@ export default function Home() {
               </div>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>ABOUT US</div>
-                <div className='text-[33px] font-bold xl:text-[45px]'>Your Company Name</div>
+                <div className='text-[33px] font-bold xl:text-[45px]'>Company Name</div>
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
-                <Link href='/about'>
-                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-[175px] mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE ABOUT US</button>
+                <Link href='/about' className='w-[175px]'>
+                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-full mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE ABOUT US</button>
                 </Link>
               </div>
             </div>
@@ -72,8 +83,8 @@ export default function Home() {
                 <div className='text-[33px] font-bold xl:text-[45px]'>Main Service Keyword</div>
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
-                <Link href='/about'>
-                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-[175px] mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE SERVICES</button>
+                <Link href='/about' className='w-[175px]'>
+                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-full mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE SERVICES</button>
                 </Link>
               </div>
               {/* <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
@@ -86,12 +97,30 @@ export default function Home() {
                   className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl shadow-xl lg:max-h-full'
                 />
               </div> */}
-              <OverlappingImages />
+              <LayeredImages />
             </div>
-
-            {/* Reviews */}
-
           </div>
+
+
+
+
+          {/* Gallery container */}
+          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] md:px-10'> */}
+          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F4FAFF] via-[#E4EAF5] to-[#D0D7EF] md:px-10'> */}
+          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] md:px-10'> */}
+          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] md:px-10'>
+            <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
+            <div className='self-center text-[33px] font-bold mt-2 mb-20 max-w-[400px] leading-tight xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</div>
+            <Carousel images={images} />
+          </div>
+
+
+
+
+          <div className='self-center h-52 mt-52'> Reviews </div>
+
+
+
       </main>
       <Footer />
     </>
