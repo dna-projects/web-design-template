@@ -12,7 +12,8 @@ const config: Config = {
 
       },
       colors: {
-        'primary': '#7598ED',
+        'primary': '#207AB1',
+        // 'primary': '#7598ED',
         // 'primary': '#eab308',
       },
       screens: {

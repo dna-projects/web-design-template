@@ -26,7 +26,7 @@ export default function Home() {
 
 
           {/* Landing container */}
-          <div className='landing-image flex flex-col justify-center relative h-screen min-h-[700px] mb-16 lg:mb-0'>
+          <div className='landing-image flex flex-col justify-center relative h-screen min-h-[700px]'>
             <div className='flex justify-center absolute bg-black opacity-55 w-full h-full'></div>
 
             {/* Content */}
@@ -42,7 +42,7 @@ export default function Home() {
                 <button className='border border-yellow-500 bg-yellow-500 font-bold w-[155px] py-3 hover:bg-white hover:border-white duration-200'>LEARN MORE</button>
               </Link>
               <Link href='/contact'>
-                <button className='border border-yellow-500 text-white font-semibold w-[155px] py-3 hover:bg-white hover:text-black hover:border-white duration-200 '>Get in Touch</button>
+                <button className='border border-yellow-500 text-white font-semibold w-[155px] py-3 hover:bg-white hover:text-black hover:border-white duration-200'>Get in Touch</button>
               </Link>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
 
 
           {/* Rest of content container - first half */}
-          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-2xl lg:gap-52 lg:py-52'>
+          <div className='flex flex-col self-center gap-32 px-4 py-32 max-w-screen-2xl lg:gap-44 lg:py-44'>
 
             {/* About section */}
             <div className='flex flex-col justify-between mx-auto gap-12 lg:flex-row 2xl:px-0'>
@@ -71,7 +71,7 @@ export default function Home() {
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
                 <Link href='/about' className='w-[175px]'>
-                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-full mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE ABOUT US</button>
+                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-full mt-9 py-3 hover:bg-white hover:border-yellow-500 duration-200'>MORE ABOUT US</button>
                 </Link>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function Home() {
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
                 <Link href='/about' className='w-[175px]'>
-                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-full mt-9 py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>MORE SERVICES</button>
+                  <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-full mt-9 py-3 hover:bg-white hover:border-yellow-500 duration-200'>MORE SERVICES</button>
                 </Link>
               </div>
               {/* <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
@@ -105,22 +105,31 @@ export default function Home() {
 
 
           {/* Gallery container */}
-          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] md:px-10'> */}
-          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F4FAFF] via-[#E4EAF5] to-[#D0D7EF] md:px-10'> */}
-          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] md:px-10'> */}
-          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-16 pb-16 lg:pt-40 lg:pb-36 from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] md:px-10'>
+          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
+          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F4FAFF] via-[#E4EAF5] to-[#D0D7EF] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
+          {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
+          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'>
             <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
-            <div className='self-center text-[33px] font-bold mt-2 mb-20 max-w-[400px] leading-tight xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</div>
+            <div className='self-center text-[33px] font-bold mt-2 mb-16 max-w-[400px] leading-tight lg:mb-20 xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</div>
             <Carousel images={images} />
+            <Link href='/gallery' className='self-center w-[175px]'>
+              <button className='border-2 border-[#161616] bg-[#161616] text-white font-semibold w-full mt-6 py-3 hover:bg-transparent hover:text-[#161616] duration-200 lg:mt-12'>FULL GALLERY</button>
+            </Link>
           </div>
 
 
 
 
-          <div className='self-center h-52 mt-52'> Reviews </div>
+          {/* Rest of content container - second half */}
+          <div className='flex flex-col self-center gap-32 px-4 py-32 max-w-screen-2xl lg:gap-44 lg:py-44'>
 
+            {/* Reviews container */}
+            <div className='flex flex-col self-center text-center px-4'>
+              <div className='font-semibold tracking-wider'>OUR REVIEWS</div>
+              <div className='self-center text-[33px] font-bold mt-2 mb-16 leading-tight lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</div>
+            </div>
 
-
+          </div>
       </main>
       <Footer />
     </>
