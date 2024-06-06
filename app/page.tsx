@@ -26,7 +26,7 @@ export default function Home() {
 
 
           {/* Landing container */}
-          <div className='landing-image flex flex-col justify-center relative h-screen min-h-[700px]'>
+          <div className='landing-image flex flex-col justify-center relative h-screen min-h-[700px] mb-16 lg:mb-0'>
             <div className='flex justify-center absolute bg-black opacity-55 w-full h-full'></div>
 
             {/* Content */}
@@ -51,7 +51,7 @@ export default function Home() {
 
 
           {/* Rest of content container - first half */}
-          <div className='flex flex-col self-center gap-52 px-4 py-52 max-w-screen-2xl'>
+          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-2xl lg:gap-52 lg:py-52'>
 
             {/* About section */}
             <div className='flex flex-col justify-between mx-auto gap-12 lg:flex-row 2xl:px-0'>
@@ -108,7 +108,7 @@ export default function Home() {
           {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] md:px-10'> */}
           {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F4FAFF] via-[#E4EAF5] to-[#D0D7EF] md:px-10'> */}
           {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] md:px-10'> */}
-          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-40 pb-36 from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] md:px-10'>
+          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r px-4 pt-16 pb-16 lg:pt-40 lg:pb-36 from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] md:px-10'>
             <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
             <div className='self-center text-[33px] font-bold mt-2 mb-20 max-w-[400px] leading-tight xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</div>
             <Carousel images={images} />
