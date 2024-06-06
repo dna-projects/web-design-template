@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <>
             <nav className='flex flex-row justify-center fixed w-full bg-white shadow-lg z-50'>
-                <div className='flex flex-row w-full max-w-screen-2xl'>
+                <div className='flex flex-row w-full max-w-screen-xl'>
                     {/* Logo */}
                         <Image
                             src='/logo-example-black.png'

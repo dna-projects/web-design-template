@@ -7,7 +7,7 @@ export default function Footer() {
             <div className='flex flex-col bg-[#282828] text-white gap-20 px-10 pt-20 pb-7'>
 
                 {/* Logo and content */}
-                <div className='flex flex-col justify-between self-center w-full max-w-screen-2xl lg:flex-row'>
+                <div className='flex flex-col justify-between self-center w-full max-w-screen-xl lg:flex-row'>
                     {/* Logo */}
                     <div className='flex justify-center self-center w-96 mb-20 lg:justify-start lg:self-start'>
                         <Image

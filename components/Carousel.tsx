@@ -44,7 +44,7 @@ export default function Carousel({ images = [] }: CarouselProps) {
     };
 
     return (
-        <div className='flex flex-row justify-center self-center max-w-screen-2xl'>
+        <div className='flex flex-row justify-center self-center max-w-screen-xl'>
 
             {/* Go back arrow */}
             <button className='flex justify-center self-center cursor-pointer w-20 -ml-4 xs:-ml-0 md:w-28' onClick={handlePrev}>
@@ -60,9 +60,9 @@ export default function Carousel({ images = [] }: CarouselProps) {
 
             {/* Gallery */}
             <div className='flex justify-center overflow-hidden w-full md:w-5/6'>
-                <div className='flex gap-8 transition-transform duration-300 ease-in-out mx-0 xs:mx-4 2xl:gap-16' style={{ transform: `translateX(-${currentIndex * (isLargeScreen ? 35 : 105)}%)` }}>
+                <div className='flex gap-8 transition-transform duration-300 ease-in-out mx-0 xs:mx-4' style={{ transform: `translateX(-${currentIndex * (isLargeScreen ? 35 : 105)}%)` }}>
                     {images.map((image, index) => (
-                        <div key={index} className='w-[100%] flex-shrink-0 lg:w-[48%] xl:w-[31.5%] 2xl:w-[30%]'>
+                        <div key={index} className='w-[100%] flex-shrink-0 lg:w-[48%] xl:w-[31.5%]'>
                             <Link href='/gallery' >
                                 <img src={image} alt={`Slide ${index}`} className='w-full h-[450px] object-cover rounded-3xl shadow-lg mb-8' />
                             </Link>
