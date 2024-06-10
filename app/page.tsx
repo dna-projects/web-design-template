@@ -52,7 +52,7 @@ export default function Home() {
 
 
           {/* Rest of content container - first half */}
-          <div className='flex flex-col self-center gap-32 px-4 py-32 max-w-screen-xl lg:gap-44 lg:py-44'>
+          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-44 lg:py-44'>
 
             {/* About section */}
             <div className='flex flex-col justify-between mx-auto gap-12 lg:flex-row 2xl:px-0'>
@@ -122,7 +122,7 @@ export default function Home() {
 
 
           {/* Rest of content container - second half */}
-          <div className='flex flex-col self-center gap-32 px-4 py-32 max-w-screen-xl lg:gap-44 lg:py-44'>
+          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-44 lg:py-44'>
 
             {/* Reviews container */}
             <div className='flex flex-col self-center text-center'>
