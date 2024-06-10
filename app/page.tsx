@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
 import ReviewCard from '../components/ReviewCard'
+import ContactBanner from '../components/ContactBanner'
 import Footer from '../components/Footer'
 
 import Link from 'next/link';
@@ -145,6 +146,10 @@ export default function Home() {
             </div>
 
           </div>
+
+          {/* Contact banner container */}
+          <ContactBanner />
+
       </main>
       <Footer />
     </>

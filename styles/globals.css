@@ -17,3 +17,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.banner-image {
+  background-image: url('/contact-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
