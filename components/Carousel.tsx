@@ -47,14 +47,14 @@ export default function Carousel({ images = [] }: CarouselProps) {
         <div className='flex flex-row justify-center self-center max-w-screen-xl'>
 
             {/* Go back arrow */}
-            <button className='flex justify-center self-center cursor-pointer w-20 -ml-4 xs:-ml-0 md:w-28' onClick={handlePrev}>
+            <button className='flex justify-center self-center cursor-pointer w-10 xs:w-20 -ml-2 xs:-ml-0 md:w-28' onClick={handlePrev}>
                 <Image
                     src='/chevron.svg'
                     alt=''
                     width={100}
                     height={100}
                     priority={true}
-                    className='self-center w-14 hover:w-full duration-100 md:w-20'
+                    className='self-center w-8 hover:w-full duration-100 xs:w-14 md:w-20'
                 />
             </button>
 
@@ -62,9 +62,9 @@ export default function Carousel({ images = [] }: CarouselProps) {
             <div className='flex justify-center overflow-hidden w-full md:w-5/6'>
                 <div className='flex gap-8 transition-transform duration-300 ease-in-out mx-0 xs:mx-4' style={{ transform: `translateX(-${currentIndex * (isLargeScreen ? 35 : 105)}%)` }}>
                     {images.map((image, index) => (
-                        <div key={index} className='w-[100%] flex-shrink-0 lg:w-[48%] xl:w-[31.5%]'>
+                        <div key={index} className='w-[93%] flex-shrink-0 xs:w-[100%] lg:w-[48%] xl:w-[31.5%]'>
                             <Link href='/gallery' >
-                                <img src={image} alt={`Slide ${index}`} className='w-full h-[450px] object-cover rounded-3xl shadow-lg mb-8' />
+                                <img src={image} alt={`Slide ${index}`} className='w-full h-[450px] object-cover rounded-3xl shadow-lg mb-8 mx-3 xs:mx-0' />
                             </Link>
                         </div>
                     ))}
@@ -72,14 +72,14 @@ export default function Carousel({ images = [] }: CarouselProps) {
             </div>
 
             {/* Go forward arrow */}
-            <button className='flex justify-center self-center cursor-pointer w-20 -mr-4 xs:-mr-0 md:w-28' onClick={handleNext}>
+            <button className='flex justify-center self-center cursor-pointer w-10 -mr-2 xs:w-20 xs:-mr-0 md:w-28' onClick={handleNext}>
                 <Image
                     src='/chevron.svg'
                     alt=''
                     width={100}
                     height={100}
                     priority={true}
-                    className='self-center rotate-180 w-14 hover:w-full duration-100 md:w-20'
+                    className='self-center rotate-180 w-8 hover:w-full duration-100 xs:w-14 md:w-20'
                 />
             </button>
         </div>
