@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
+import ReviewCard from '../components/ReviewCard'
 import Footer from '../components/Footer'
 
 import Link from 'next/link';
@@ -124,9 +125,23 @@ export default function Home() {
           <div className='flex flex-col self-center gap-32 px-4 py-32 max-w-screen-xl lg:gap-44 lg:py-44'>
 
             {/* Reviews container */}
-            <div className='flex flex-col self-center text-center px-4'>
+            <div className='flex flex-col self-center text-center'>
               <div className='font-semibold tracking-wider'>OUR REVIEWS</div>
               <div className='self-center text-[33px] font-bold mt-2 mb-16 leading-tight lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</div>
+
+              {/* Cards */}
+              <div className='flex flex-col self-center gap-4 max-w-xl lg:flex-row lg:max-w-full'>
+                <ReviewCard
+                  name={'John D.'}
+                  quote={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+                  stars={5}
+                />
+                <ReviewCard
+                  name={'Jane D.'}
+                  quote={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+                  stars={5}
+                />
+              </div>
             </div>
 
           </div>
