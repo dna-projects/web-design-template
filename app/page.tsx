@@ -56,7 +56,7 @@ export default function Home() {
           <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-44 lg:py-44'>
 
             {/* About section */}
-            <div className='flex flex-col justify-between mx-auto gap-12 lg:flex-row 2xl:px-0'>
+            <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0'>
               <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
                 <Image
                   src='/about3.png'
@@ -64,7 +64,7 @@ export default function Home() {
                   width={1920}
                   height={1920}
                   priority={true}
-                  className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl lg:max-h-full'
+                  className='self-center object-cover w-full h-full max-h-[420px] rounded-3xl lg:max-h-full'
                 />
               </div>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             {/* Detail about a service */}
-            <div className='flex flex-col-reverse justify-center mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-20'>
+            <div className='flex flex-col-reverse mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-20'>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>SEO RANKING</div>
                 <div className='text-[33px] font-bold xl:text-[45px]'>Main Service Keyword</div>
