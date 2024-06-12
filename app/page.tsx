@@ -34,17 +34,17 @@ export default function Home() {
             {/* Content */}
             <div className='flex flex-col self-center items-center z-20 px-7 xs:px-16 lg:px-5'>
               <div className='text-center text-yellow-500 font-bold tracking-wider'>ELEVATE YOUR BUSINESS</div>
-              <h1 className='text-center text-[35px] text-white font-bold tracking-tighter max-w-[600px] mt-7 md:text-[45px]'>Unlock your Online Potential with Stunning Websites</h1>
+              <h1 className='text-center text-[32px] text-white font-bold leading-tight tracking-tighter max-w-[600px] mt-7 md:text-[45px]'>Unlock your Online Potential with Stunning Websites</h1>
               <p className='text-center text-white mt-7'>Our talented designers craft pixel-perfect websites that enhance your brand&apos;s digital footprint.</p>
             </div>
 
             {/* Buttons */}
             <div className='flex flex-col justify-center self-center gap-3 z-20 mt-14 xs:flex-row'>
               <Link href='/about'>
-                <button className='border border-yellow-500 bg-yellow-500 font-bold w-[155px] py-3 hover:bg-white hover:border-white duration-200'>LEARN MORE</button>
+                <button className='border border-yellow-500 bg-yellow-500 font-bold w-[165px] py-3 hover:bg-white hover:border-white duration-200'>LEARN MORE</button>
               </Link>
               <Link href='/contact'>
-                <button className='border border-yellow-500 text-white font-semibold w-[155px] py-3 hover:bg-white hover:text-black hover:border-white duration-200'>Get in Touch</button>
+                <button className='border border-yellow-500 text-white font-semibold w-[165px] py-3 hover:bg-white hover:text-black hover:border-white duration-200'>Get in Touch</button>
               </Link>
             </div>
           </div>
