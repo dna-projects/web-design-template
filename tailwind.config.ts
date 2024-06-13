@@ -12,7 +12,8 @@ const config: Config = {
 
       },
       colors: {
-        'primary': '#207AB1',
+        'primary': '#ffba19',
+        // 'primary': '#207AB1',
         // 'primary': '#7598ED',
         // 'primary': '#eab308',
       },

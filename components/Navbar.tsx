@@ -65,7 +65,7 @@ export default function Navbar() {
 
                     {/* Contact button */}
                     <Link href='/contact' className='hidden self-center lg:flex'>
-                        <button className='border-2 border-yellow-500 bg-yellow-500 font-bold w-[155px] m-4 py-2 2xl:py-2.5 hover:bg-white hover:border-yellow-500 duration-200'>CONTACT US</button>
+                        <button className='border-2 border-primary bg-primary font-bold w-[155px] m-4 py-2 2xl:py-2.5 hover:bg-white duration-200'>CONTACT US</button>
                     </Link>
                 </div>
 

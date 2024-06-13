@@ -7,7 +7,7 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
     return (
         <>
             <Navbar />
-            <Banner headline='About Us' image='/banner-background5.jpg' />
+            <Banner headline='About Us' image='/banner-background4.jpg' />
             <main>{children}</main>
             <div className='flex flex-col'>
                 <ContactBanner />
