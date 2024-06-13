@@ -46,7 +46,7 @@ export default function Navbar() {
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link>
                         <Link href='/about' className={`group flex flex-col ${currentPath === '/about' ? 'active' : ''}`}>
-                            <div>About</div>
+                            <div>About Us</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/about' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link>
                         <Link href='/services' className={`group flex flex-col ${currentPath === '/services' ? 'active' : ''}`}>

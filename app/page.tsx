@@ -131,7 +131,7 @@ export default function Home() {
               <div className='self-center text-[33px] font-bold mt-2 mb-16 leading-tight lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</div>
 
               {/* Cards */}
-              <div className='flex flex-col self-center gap-4 max-w-xl lg:flex-row lg:max-w-full'>
+              <div className='flex flex-col self-center gap-8 max-w-xl lg:flex-row lg:max-w-full lg:gap-4'>
                 <ReviewCard
                   name={'John D.'}
                   quote={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}

@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-
 export default function About() {
     return (
         <>
-            <main className='flex flex-col'>
+            <main className='flex flex-col text-[#161616]'>
                 <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:pt-24 lg:pb-44'>
 
                     {/* About section */}
