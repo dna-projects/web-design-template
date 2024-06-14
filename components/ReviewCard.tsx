@@ -9,7 +9,7 @@ type ReviewCardProps = {
 export default function ReviewCard({ name, quote, stars }: ReviewCardProps) {
     return (
         <>
-            <div className='flex flex-col justify-between self-center overflow-auto bg-white w-full h-[330px] shadow-lg p-4 pt-7'>
+            <div className='flex flex-col justify-between self-center overflow-auto bg-white w-full h-[330px] rounded-md shadow-lg p-4 pt-7'>
 
                 {/* Customer review */}
                 <div className='flex flex-col'>

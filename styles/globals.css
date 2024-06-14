@@ -13,7 +13,7 @@ body {
 }
 
 .landing-image {
-  background-image: url('/banner-background7.jpg');
+  background-image: url('/landing-background.jpg');
   background-size: cover;
   background-position: center;
 }

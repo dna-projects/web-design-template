@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar'
+import ServiceCard from '../components/ServiceCard'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
 import ReviewCard from '../components/ReviewCard'
@@ -30,9 +31,9 @@ export default function Home() {
           {/* Landing container */}
           <div
             className='landing-image flex flex-col justify-center relative h-screen min-h-[700px]'
-            // style={{
-            //   height: 'calc(100vh + 150px)',
-            // }}
+            style={{
+              height: 'calc(100vh + 254px)',
+            }}
           >
             <div className='flex justify-center absolute bg-black opacity-55 w-full h-full'></div>
 
@@ -44,7 +45,7 @@ export default function Home() {
             </div>
 
             {/* Buttons */}
-            <div className='flex flex-col justify-center self-center gap-3 z-20 mt-14 xs:flex-row'>
+            <div className='flex flex-col justify-center self-center gap-3 z-20 mt-14 pb-64 xs:flex-row'>
               <Link href='/about'>
                 <button className='border border-primary bg-primary font-bold w-[165px] py-3 hover:bg-white hover:border-white duration-200'>LEARN MORE</button>
               </Link>
@@ -58,8 +59,24 @@ export default function Home() {
 
 
           {/* Service cards container */}
-          <div>
-            
+          <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl z-20 -mt-[230px] lg:-mt-[300px] lg:pt-36 lg:pb-0'>
+            <div className='flex flex-col self-center gap-8 max-w-xl lg:flex-row lg:max-w-full'>
+              <ServiceCard
+                icon={'/service-1-icon.svg'}
+                  title={'Service 1'}
+                  content={'1-2 sentences about the service with keywords people will be searching for.'}
+              />
+              <ServiceCard
+                icon={'/service-2-icon.svg'}
+                  title={'Service 2'}
+                  content={'1-2 sentences about the service with keywords people will be searching for.'}
+              />
+              <ServiceCard
+                  icon={'/service-3-icon.svg'}
+                  title={'Service 3'}
+                  content={'1-2 sentences about the service with keywords people will be searching for.'}
+              />
+            </div>
           </div>
 
 
@@ -86,7 +103,7 @@ export default function Home() {
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
                 <Link href='/about' className='w-[175px]'>
-                  <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>MORE ABOUT US</button>
+                  <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>LEARN MORE</button>
                 </Link>
               </div>
             </div>
@@ -99,7 +116,7 @@ export default function Home() {
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
                 <Link href='/about' className='w-[175px]'>
-                  <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>MORE SERVICES</button>
+                  <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>OUR SERVICES</button>
                 </Link>
               </div>
               <LayeredImages />
