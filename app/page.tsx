@@ -28,13 +28,18 @@ export default function Home() {
 
 
           {/* Landing container */}
-          <div className='landing-image flex flex-col justify-center relative h-screen min-h-[700px]'>
+          <div
+            className='landing-image flex flex-col justify-center relative h-screen min-h-[700px]'
+            // style={{
+            //   height: 'calc(100vh + 150px)',
+            // }}
+          >
             <div className='flex justify-center absolute bg-black opacity-55 w-full h-full'></div>
 
             {/* Content */}
             <div className='flex flex-col self-center items-center z-20 px-7 xs:px-16 lg:px-5'>
               <div className='text-center text-primary font-bold tracking-wider'>ELEVATE YOUR BUSINESS</div>
-              <h1 className='text-center text-[32px] text-white font-bold leading-tight tracking-tighter max-w-[600px] mt-7 md:text-[45px]'>Unlock your Online Potential with Stunning Websites</h1>
+              <h1 className='text-center text-[32px] text-white font-extrabold leading-tight tracking-tighter max-w-[600px] mt-7 md:text-[45px]'>Unlock your Online Potential with Stunning Websites</h1>
               <p className='text-center text-white mt-7'>Our talented designers craft pixel-perfect websites that enhance your brand&apos;s digital footprint.</p>
             </div>
 
@@ -52,8 +57,16 @@ export default function Home() {
 
 
 
+          {/* Service cards container */}
+          <div>
+            
+          </div>
+
+
+
+
           {/* Rest of content container - first half */}
-          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-44 lg:py-44'>
+          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-36 lg:py-36'>
 
             {/* About section */}
             <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0'>
@@ -69,7 +82,7 @@ export default function Home() {
               </div>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>ABOUT US</div>
-                <div className='text-[33px] font-bold xl:text-[45px]'>Company Name</div>
+                <h2 className='text-[33px] font-extrabold xl:text-[45px]'>Company Name</h2>
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
                 <Link href='/about' className='w-[175px]'>
@@ -82,23 +95,13 @@ export default function Home() {
             <div className='flex flex-col-reverse mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-20'>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>SEO RANKING</div>
-                <div className='text-[33px] font-bold xl:text-[45px]'>Main Service Keyword</div>
+                <h2 className='text-[33px] font-extrabold xl:text-[45px]'>Main Service Keyword</h2>
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
                 <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
                 <Link href='/about' className='w-[175px]'>
                   <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>MORE SERVICES</button>
                 </Link>
               </div>
-              {/* <div className='self-center max-w-[550px] h-full lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
-                <Image
-                  src='/home-service-bottom.jpg'
-                  alt=''
-                  width={1920}
-                  height={1920}
-                  priority={true}
-                  className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl shadow-xl lg:max-h-full'
-                />
-              </div> */}
               <LayeredImages />
             </div>
           </div>
@@ -110,9 +113,9 @@ export default function Home() {
           {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
           {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F4FAFF] via-[#E4EAF5] to-[#D0D7EF] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
           {/* <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
-          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'>
+          <div className='flex flex-col self-center text-center w-screen bg-gradient-to-r from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] px-4 pt-16 pb-16 md:px-10 lg:pt-20 lg:pb-20'>
             <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
-            <div className='self-center text-[33px] font-bold mt-2 mb-16 max-w-[400px] leading-tight lg:mb-20 xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</div>
+            <h2 className='self-center text-[33px] font-extrabold mt-2 mb-16 max-w-[400px] leading-tight lg:mb-20 xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</h2>
             <Carousel images={images} />
             <Link href='/gallery' className='self-center w-[175px]'>
               <button className='border-2 border-[#161616] bg-[#161616] text-white font-semibold w-full mt-6 py-3 hover:bg-transparent hover:text-[#161616] duration-200 lg:mt-12'>FULL GALLERY</button>
@@ -123,12 +126,12 @@ export default function Home() {
 
 
           {/* Rest of content container - second half */}
-          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-44 lg:py-44'>
+          <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:py-36'>
 
             {/* Reviews container */}
             <div className='flex flex-col self-center text-center'>
               <div className='font-semibold tracking-wider'>OUR REVIEWS</div>
-              <div className='self-center text-[33px] font-bold mt-2 mb-16 leading-tight lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</div>
+              <h2 className='self-center text-[33px] font-extrabold mt-2 mb-16 leading-tight lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</h2>
 
               {/* Cards */}
               <div className='flex flex-col self-center gap-8 max-w-xl lg:flex-row lg:max-w-full lg:gap-4'>
@@ -144,7 +147,6 @@ export default function Home() {
                 />
               </div>
             </div>
-
           </div>
 
           {/* Contact banner container */}
