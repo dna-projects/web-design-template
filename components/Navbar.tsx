@@ -1,5 +1,7 @@
 'use client'
 
+import HamburgerButton from '../components/HamburgerButton'
+
 import Link from 'next/link';
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
@@ -27,7 +29,8 @@ export default function Navbar() {
                         className='flex justify-end w-full lg:hidden'
                         aria-label='mobile menu toggle'
                     >
-                        <button className='self-center h-[25px] m-5'>
+                        <HamburgerButton />
+                        {/* <button className='self-center h-[25px] m-5'>
                             <Image
                                 src='/burger-menu.svg'
                                 alt=''
@@ -36,7 +39,7 @@ export default function Navbar() {
                                 priority={true}
                                 className=''
                             />
-                        </button>
+                        </button> */}
                     </div>
 
                     {/* Menu */}
