@@ -1,15 +1,13 @@
-import { useState } from 'react';
+type HamburgerButtonProps = {
+  isOpen: boolean;
+  toggleSideBar: () => void;
+}
 
-export default function HamburgerButton() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSideBar = () => {
-    setIsOpen(!isOpen);
-  };
+export default function HamburgerButton({ isOpen, toggleSideBar }: HamburgerButtonProps) {
 
   return (
     <>
-      <button onClick={toggleSideBar} className='self-center w-8 h-8 m-4'>
+      <button onClick={toggleSideBar} className='self-center w-10 h-10 m-1.5'>
         <div className='flex flex-col'>
           <div className={`layers diagonal part-1 self-center ${isOpen ? 'open rounded-sm' : 'rounded-sm'}`}></div>
           <div className={`layers horizontal self-center ${isOpen ? 'open rounded-sm' : 'rounded-sm'}`}></div>
@@ -19,4 +17,3 @@ export default function HamburgerButton() {
     </>
   );
 };
-

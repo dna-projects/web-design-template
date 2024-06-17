@@ -32,12 +32,12 @@ body {
 
 
 
-/* Navbar hamburger animation */
+/* Navbar hamburger icon animation */
 
 .layers {
   transition: all 0.3s;
   height: 2px;
-  width: 75%;
+  width: 50%;
   background-color: #161616;
 }
 
