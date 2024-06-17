@@ -15,14 +15,16 @@ export default function Navbar() {
             <nav className='flex flex-row justify-center fixed w-full bg-white shadow-lg z-50'>
                 <div className='flex flex-row w-full max-w-screen-xl'>
                     {/* Logo */}
-                        <Image
-                            src='/logo-example-black.png'
-                            alt=''
-                            width={500}
-                            height={500}
-                            priority={true}
-                            className='self-center w-[180px] h-[45px] m-4 2xl:w-[260px] 2xl:h-[65px] '
-                        />
+                        <Link href='/' className=''>
+                            <Image
+                                src='/logo-example-black.png'
+                                alt=''
+                                width={500}
+                                height={500}
+                                priority={true}
+                                className='self-center w-[170px] h-[45px] m-4 2xl:w-[250px] 2xl:h-[65px] '
+                            />
+                        </Link>
 
                     {/* Hamburger Menu */}
                     <div

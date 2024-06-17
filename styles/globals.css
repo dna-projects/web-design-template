@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +13,9 @@
 body {
   overflow-x: hidden;
 }
+
+
+
 
 .landing-image {
   background-image: url('/landing-background.jpg');
@@ -22,6 +28,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+
+
 
 /* Navbar hamburger animation */
 
