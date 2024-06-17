@@ -33,7 +33,6 @@ body {
 
 
 /* Navbar hamburger icon animation */
-
 .layers {
   transition: all 0.3s;
   height: 2px;
@@ -66,4 +65,13 @@ body {
 .open.diagonal.part-2 {
   transform: rotate(-135deg);
   margin-top: -8px;
+}
+
+
+
+
+/* Side bar background blur for ios */
+.ios-backdrop-blur {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }

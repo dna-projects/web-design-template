@@ -13,9 +13,9 @@ type SidebarProps = {
             <>
 
                 {/* Background blur layer */}
-                <div className={`fixed top-[77px] right-0 h-screen bg-[#161616]/60 backdrop-blur-md transition-all duration-300 ease-in-out transform ${
+                <div className={`fixed top-[77px] right-0 h-screen bg-[#161616]/60 transition-all duration-300 ease-in-out transform ${
                         isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
-                    } w-full z-30 lg:hidden`}>
+                    } w-full z-30 ios-backdrop-blur lg:hidden`}>
                 </div>
 
                 {/* Sidebar menu */}
