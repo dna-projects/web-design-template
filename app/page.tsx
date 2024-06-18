@@ -30,7 +30,7 @@ export default function Home() {
 
           {/* Landing container */}
           <div
-            className='landing-image flex flex-col justify-center relative h-screen min-h-[700px]'
+            className='landing-image flex flex-col justify-center relative h-screen min-h-[900px]'
             style={{
               height: 'calc(100vh + 254px)',
             }}
