@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Footer() {
     return (
         <>
-            <div className='flex flex-col bg-[#282828] text-white gap-20 px-10 pt-20 pb-7'>
+            <div className='flex flex-col bg-[#161616] text-white gap-20 px-10 pt-20 pb-7'>
 
                 {/* Logo and content */}
                 <div className='flex flex-col justify-between self-center w-full max-w-screen-xl lg:flex-row'>
