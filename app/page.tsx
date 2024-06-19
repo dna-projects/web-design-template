@@ -86,22 +86,22 @@ export default function Home() {
           <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-36 lg:py-36'>
 
             {/* About section */}
-            <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-20'>
-              <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
+            <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-[70px]'>
+              <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-[60%]'>
                 <Image
-                  src='/about3.png'
+                  src='/about6.png'
                   alt=''
                   width={1920}
                   height={1920}
                   priority={true}
-                  className='self-center object-cover w-full h-full max-h-[420px] rounded-3xl lg:max-h-full'
+                  className='self-center object-contain w-full h-full max-h-[420px] rounded-3xl lg:max-h-full'
                 />
               </div>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>ABOUT US</div>
                 <h2 className='text-[33px] font-extrabold xl:text-[45px]'>Company Name</h2>
-                <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
+                <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+                <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
                 <Link href='/about' className='w-[175px]'>
                   <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>LEARN MORE</button>
                 </Link>
@@ -109,12 +109,12 @@ export default function Home() {
             </div>
 
             {/* Detail about a service */}
-            <div className='flex flex-col-reverse mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-20'>
+            <div className='flex flex-col-reverse mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-[70px]'>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>SEO RANKING</div>
                 <h2 className='text-[33px] font-extrabold xl:text-[45px]'>Main Service Keyword</h2>
                 <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
+                <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</p>
                 <Link href='/about' className='w-[175px]'>
                   <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>OUR SERVICES</button>
                 </Link>

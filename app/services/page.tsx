@@ -7,7 +7,7 @@ export default function Services() {
     return (
         <>
             <main className='flex flex-col text-[#161616]'>
-                <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:pt-24 lg:pb-36'>
+                <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:pt-28 lg:pb-36'>
 
                     {/* Detail about a service */}
                     <div className='flex flex-col-reverse gap-12 lg:flex-row lg:gap-16 xl:gap-24 2xl:px-0'>

@@ -20,7 +20,7 @@ export default function ServiceCardFull({ image, icon, title, content }: Service
                         width={1000}
                         height={1000}
                         priority={true}
-                        className='self-center object-cover rounded-t-md w-full h-1/3 lg:h-full lg:w-2/5 lg:rounded-l-md'
+                        className='self-center object-cover rounded-t-md w-full h-1/3 lg:h-full lg:w-2/5 lg:rounded-l-md lg:rounded-tr-none'
                     />
 
                 {/* Service content */}

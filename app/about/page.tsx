@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
             <main className='flex flex-col text-[#161616]'>
-                <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:pt-24 lg:pb-36'>
+                <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:pt-28 lg:pb-36'>
 
                     {/* About section */}
                     <div className='flex flex-col gap-12 lg:flex-row lg:gap-16 xl:gap-24 2xl:px-0'>
