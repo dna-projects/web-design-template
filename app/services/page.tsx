@@ -23,7 +23,7 @@ export default function Services() {
                     <LayeredImages />
                     </div>
                 </div>
-                <div className='flex flex-col self-center max-w-screen-xl gap-16 px-4 lg:gap-36 lg:pb-36'>
+                <div className='flex flex-col self-center max-w-screen-xl gap-16 px-4 pb-16 lg:gap-36 lg:pb-36'>
                     <ServiceCardFull
                         image={'/service-1-image2.jpg'}
                         icon={'/service-1-icon.svg'}
