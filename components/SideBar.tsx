@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,6 +9,20 @@ type SidebarProps = {
 
     export default function Sidebar({ isOpen }: SidebarProps) {
         const currentPath = usePathname()
+
+        // Stop scroll if sidebar is open
+        useEffect(() => {
+            if (isOpen) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+
+            // Cleanup to revert the overflow style when the component unmounts
+            return () => {
+                document.body.style.overflow = 'auto';
+            };
+        }, [isOpen]);
 
         return (
             <>
