@@ -41,6 +41,10 @@ type SidebarProps = {
                             <div>Gallery</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/gallery' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link>
+                        <Link href='/contact' className={`group flex flex-col self-end  ${currentPath === '/gallery' ? 'active' : ''}`}>
+                            <div>Contact Us</div>
+                            <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/gallery' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
+                        </Link>
                     </div>
                 </div>
             </>
