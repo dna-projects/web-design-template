@@ -24,14 +24,14 @@ export default function Navbar() {
                 <div className='flex flex-row w-full max-w-screen-xl'>
 
                     {/* Logo */}
-                    <Link href='/' className='flex justify-center ml-4 w-[170px] min-w-[170px] min-h-[77px] 2xl:w-[200px]'>
+                    <Link href='/' className='flex justify-center ml-4 w-[170px] min-w-[120px] min-h-[77px] 2xl:w-[200px]'>
                         <Image
-                            src='/logo-example-black.png'
+                            src='/logo-example-dark.png'
                             alt=''
                             width={500}
                             height={500}
                             priority={true}
-                            className='self-center  '
+                            className='self-center mt-1.5'
                         />
                     </Link>
 

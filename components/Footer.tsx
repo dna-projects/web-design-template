@@ -9,14 +9,14 @@ export default function Footer() {
                 {/* Logo and content */}
                 <div className='flex flex-col justify-between self-center w-full max-w-screen-xl lg:flex-row'>
                     {/* Logo */}
-                    <div className='flex justify-center self-center w-96 mb-20 lg:justify-start lg:self-start'>
+                    <div className='flex justify-center self-center w-52 lg:w-64 mb-20 lg:justify-start lg:self-start'>
                         <Image
-                            src='/logo-example-white.png'
+                            src='/logo-example-light.png'
                             alt=''
                             width={500}
                             height={500}
                             priority={true}
-                            className='w-[320px] h-[80px]'
+                            className=''
                         />
                     </div>
                     {/* Footer content */}
