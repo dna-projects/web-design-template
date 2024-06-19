@@ -6,7 +6,7 @@ export default function ContactLayout({ children }: { children: React.ReactNode 
     return (
         <>
             <Navbar />
-            <Banner headline='Contact Us' image='/banner-background4.jpg' />
+            <Banner headline='Contact Us' image='/page-banner-bg4.jpg' />
             <main>{children}</main>
             <Footer />
         </>

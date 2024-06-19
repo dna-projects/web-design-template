@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image'
 
-type ServiceCardProps = {
+type ServiceCardBannerProps = {
     icon: string;
     title: string;
     content: string;
 };
 
-export default function ServiceCard({ icon, title, content }: ServiceCardProps) {
+export default function ServiceCardBanner({ icon, title, content }: ServiceCardBannerProps) {
     return (
         <>
             <div className='flex flex-col justify-center self-center bg-white w-full h-[320px] border-t-[6px] border-primary rounded-md shadow-lg p-5'>

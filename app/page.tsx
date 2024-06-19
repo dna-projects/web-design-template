@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-import ServiceCard from '../components/ServiceCard'
+import ServiceCardBanner from '../components/ServiceCardBanner'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
 import ReviewCard from '../components/ReviewCard'
@@ -28,7 +28,7 @@ export default function Home() {
 
 
 
-          {/* Landing container */}
+          {/* Hero container */}
           <div
             className='landing-image flex flex-col justify-center relative h-screen min-h-[900px]'
             style={{
@@ -61,17 +61,17 @@ export default function Home() {
           {/* Service cards container */}
           <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl z-20 -mt-[230px] lg:-mt-[300px] lg:pt-36 lg:pb-0'>
             <div className='flex flex-col self-center gap-8 max-w-xl lg:flex-row lg:max-w-full'>
-              <ServiceCard
+              <ServiceCardBanner
                 icon={'/service-1-icon.svg'}
                   title={'Service 1'}
                   content={'1-2 sentences about the service with keywords people will be searching for.'}
               />
-              <ServiceCard
+              <ServiceCardBanner
                 icon={'/service-2-icon.svg'}
                   title={'Service 2'}
                   content={'1-2 sentences about the service with keywords people will be searching for.'}
               />
-              <ServiceCard
+              <ServiceCardBanner
                   icon={'/service-3-icon.svg'}
                   title={'Service 3'}
                   content={'1-2 sentences about the service with keywords people will be searching for.'}
@@ -86,7 +86,7 @@ export default function Home() {
           <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-36 lg:py-36'>
 
             {/* About section */}
-            <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0'>
+            <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-20'>
               <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-1/2'>
                 <Image
                   src='/about3.png'
@@ -134,8 +134,8 @@ export default function Home() {
             <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
             <h2 className='self-center text-[33px] font-extrabold mt-2 mb-16 max-w-[400px] leading-tight lg:mb-20 xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</h2>
             <Carousel images={images} />
-            <Link href='/gallery' className='self-center w-[175px]'>
-              <button className='border-2 border-[#161616] bg-[#161616] text-white font-semibold w-full mt-6 py-3 hover:bg-transparent hover:text-[#161616] duration-200 lg:mt-12'>FULL GALLERY</button>
+            <Link href='/gallery' className='self-center w-[175px] mt-6 lg:mt-12'>
+              <button className='border-2 border-[#161616] bg-[#161616] text-white font-semibold w-full py-3 hover:bg-transparent hover:text-[#161616] duration-200'>FULL GALLERY</button>
             </Link>
           </div>
 

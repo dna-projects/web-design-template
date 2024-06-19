@@ -7,7 +7,7 @@ export default function ReviewLayout({ children }: { children: React.ReactNode }
     return (
         <>
             <Navbar />
-            <Banner headline='Reviews' image='/banner-background4.jpg' />
+            <Banner headline='Reviews' image='/page-banner-bg4.jpg' />
             <main>{children}</main>
             <div className='flex flex-col'>
                 <ContactBanner />

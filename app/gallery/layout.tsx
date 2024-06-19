@@ -7,7 +7,7 @@ export default function GalleryLayout({ children }: { children: React.ReactNode 
     return (
         <>
             <Navbar />
-            <Banner headline='Gallery' image='/banner-background4.jpg' />
+            <Banner headline='Gallery' image='/page-banner-bg4.jpg' />
             <main>{children}</main>
             <div className='flex flex-col'>
                 <ContactBanner />
