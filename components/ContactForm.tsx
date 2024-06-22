@@ -21,7 +21,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className='self-center w-full lg:w-1/2'>
+        <div className='self-center w-full max-w-[550px] lg:w-1/2'>
             <div className='font-semibold tracking-wider'>CONTACT</div>
             <h2 className='text-[33px] font-extrabold mb-5 xl:text-[45px]'>Get in Touch</h2>
             <p className='text-neutral-600 mb-10'>

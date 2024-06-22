@@ -1,9 +1,41 @@
+import GalleryImage from '../../components/GalleryImage'
 
 export default function Gallery() {
     return (
         <>
-            <main className='flex min-h-screen flex-col items-center justify-between p-36'>
-                {/* <h1>Gallery</h1> */}
+            <main className='flex flex-col text-[#161616]'>
+
+                {/* Gallery container */}
+                <div className='flex flex-col self-center max-w-screen-xl gap-16 px-4 py-16 lg:gap-20 lg:pt-28 lg:pb-36'>
+
+                    {/* Row 1 */}
+                    <div className='flex flex-row self-center max-w-[550px] lg:max-w-full'>
+                        <div className='flex flex-col justify-between gap-16 lg:gap-0 lg:h-[500px] lg:flex-row'>
+                            <GalleryImage imageName={'/gallery-1.jpg'} />
+                            <GalleryImage imageName={'/gallery-2.jpg'} />
+                            <GalleryImage imageName={'/gallery-3.jpg'} />
+                        </div>
+                    </div>
+
+                    {/* Row 2 */}
+                    <div className='flex flex-row self-center max-w-[550px] lg:max-w-full'>
+                        <div className='flex flex-col justify-between gap-16 lg:gap-0 lg:h-[500px] lg:flex-row'>
+                            <GalleryImage imageName={'/gallery-4.jpg'} />
+                            <GalleryImage imageName={'/gallery-5.jpg'} />
+                            <GalleryImage imageName={'/gallery-6.jpg'} />
+                        </div>
+                    </div>
+
+                    {/* Row 3 */}
+                    <div className='flex flex-row self-center max-w-[550px] lg:max-w-full'>
+                        <div className='flex flex-col justify-between gap-16 lg:gap-0 lg:h-[500px] lg:flex-row'>
+                            <GalleryImage imageName={'/gallery-7.jpg'} />
+                            <GalleryImage imageName={'/gallery-8.jpg'} />
+                            <GalleryImage imageName={'/gallery-9.jpg'} />
+                        </div>
+                    </div>
+
+                </div>
             </main>
         </>
     );

@@ -13,11 +13,12 @@ export default function Home() {
 
   // Images for gallery carousel
   const images = [
-    '/gallery-1.png',
+    '/gallery-1.jpg',
     '/gallery-2.jpg',
     '/gallery-3.jpg',
     '/gallery-4.jpg',
     '/gallery-5.jpg',
+    '/gallery-6.jpg',
   ];
 
   return (
@@ -68,13 +69,13 @@ export default function Home() {
               />
               <ServiceCardBanner
                 icon={'/service-2-icon.svg'}
-                  title={'Service 2'}
-                  content={'1-2 sentences about the service with keywords people will be searching for.'}
+                title={'Service 2'}
+                content={'1-2 sentences about the service with keywords people will be searching for.'}
               />
               <ServiceCardBanner
-                  icon={'/service-3-icon.svg'}
-                  title={'Service 3'}
-                  content={'1-2 sentences about the service with keywords people will be searching for.'}
+                icon={'/service-3-icon.svg'}
+                title={'Service 3'}
+                content={'1-2 sentences about the service with keywords people will be searching for.'}
               />
             </div>
           </div>
