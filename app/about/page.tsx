@@ -12,7 +12,7 @@ export default function About() {
                         <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-2/3'>
                             <Image
                             src='/about3.png'
-                            alt=''
+                            alt='Example of four web designs layered on top of each other'
                             width={1024}
                             height={782}
                             // priority={true}

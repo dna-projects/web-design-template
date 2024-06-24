@@ -50,7 +50,7 @@ export default function Carousel({ images = [] }: CarouselProps) {
             <button className='flex justify-center self-center cursor-pointer w-10 xs:w-20 -ml-2 xs:-ml-0 md:w-28' onClick={handlePrev}>
                 <Image
                     src='/chevron.svg'
-                    alt=''
+                    alt='Left facing chevron'
                     width={100}
                     height={100}
                     className='self-center w-8 hover:w-full duration-100 xs:w-14 md:w-20'
@@ -74,7 +74,7 @@ export default function Carousel({ images = [] }: CarouselProps) {
             <button className='flex justify-center self-center cursor-pointer w-10 -mr-2 xs:w-20 xs:-mr-0 md:w-28' onClick={handleNext}>
                 <Image
                     src='/chevron.svg'
-                    alt=''
+                    alt='Right facing chevron'
                     width={100}
                     height={100}
                     className='self-center rotate-180 w-8 hover:w-full duration-100 xs:w-14 md:w-20'

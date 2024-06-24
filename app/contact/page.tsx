@@ -15,7 +15,7 @@ export default function Contact() {
                         <div className='flex flex-col-reverse justify-between self-center w-full h-[89%] lg:flex-col lg:w-1/2'>
                             <Image
                                 src='/contact-page.jpg'
-                                alt=''
+                                alt='Picture a held mobile device with various contact icons'
                                 width={1350}
                                 height={1332}
                                 priority={true}

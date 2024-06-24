@@ -17,7 +17,7 @@ export default function ServiceCardFull({ id, image, icon, title, content }: Ser
                 {/* Service image */}
                     <Image
                         src={image}
-                        alt=''
+                        alt='Example images related to the service'
                         width={2200}
                         height={1200}
                         className='self-center object-cover rounded-t-md w-full h-1/3 lg:h-full lg:w-2/5 lg:rounded-l-md lg:rounded-tr-none'
@@ -28,7 +28,7 @@ export default function ServiceCardFull({ id, image, icon, title, content }: Ser
                     <div className='flex flex-row'>
                         <Image
                             src={icon}
-                            alt=''
+                            alt='Icon related to the service'
                             width={50}
                             height={50}
                             className='self-center w-8 mr-4 lg:w-10 lg:mr-6'
