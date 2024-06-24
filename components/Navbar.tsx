@@ -27,9 +27,9 @@ export default function Navbar() {
                     <Link href='/' className='flex justify-center ml-4 w-[170px] min-w-[120px] min-h-[77px] 2xl:w-[200px]'>
                         <Image
                             src='/logo-example-dark.png'
-                            alt=''
-                            width={500}
-                            height={500}
+                            alt='Company logo'
+                            width={446}
+                            height={100}
                             priority={true}
                             className='self-center mt-1.5'
                         />
