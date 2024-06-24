@@ -15,6 +15,7 @@ export default function LayeredImages() {
                     alt='Example image of code on a screen'
                     width={1920}
                     height={1080}
+                    priority={true}
                     className='self-center absolute object-cover top-0 right-0 w-[85%] h-[90%] max-h-[320px] rounded-3xl shadow-xl lg:max-h-full'
                 />
                 <Image

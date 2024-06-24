@@ -15,7 +15,6 @@ export default function Footer() {
                             alt='Company logo'
                             width={446}
                             height={91}
-                            className=''
                         />
                     </div>
                     {/* Footer content */}

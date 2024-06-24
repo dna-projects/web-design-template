@@ -17,8 +17,9 @@ body {
 
 
 
-.landing-image {
-  background-image: url('/landing-background.jpg');
+/* Background images */
+.hero-image {
+  background-image: url('/hero-background.jpg');
   background-size: cover;
   background-position: center;
 }

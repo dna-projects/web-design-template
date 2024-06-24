@@ -13,9 +13,6 @@ const config: Config = {
       },
       colors: {
         'primary': '#ffba19',
-        // 'primary': '#207AB1',
-        // 'primary': '#7598ED',
-        // 'primary': '#eab308',
       },
       screens: {
         'xs': '512px',

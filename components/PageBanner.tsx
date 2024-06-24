@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image'
 
-type BannerProps = {
+type PageBannerProps = {
     headline: string;
     image: string;
 };
 
-export default function Banner({ headline, image }: BannerProps) {
+export default function Banner({ headline, image }: PageBannerProps) {
     return (
         <>
             <div

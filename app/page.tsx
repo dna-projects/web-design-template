@@ -1,10 +1,8 @@
-import Navbar from '../components/Navbar'
 import ServiceCardBanner from '../components/ServiceCardBanner'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
 import ReviewCard from '../components/ReviewCard'
 import ContactBanner from '../components/ContactBanner'
-import Footer from '../components/Footer'
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -23,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className='flex flex-col text-[#161616]'>
 
 
@@ -31,12 +29,12 @@ export default function Home() {
 
           {/* Hero container */}
           <div
-            className='landing-image flex flex-col justify-center relative h-screen min-h-[900px]'
+            className='hero-image flex flex-col justify-center relative h-screen min-h-[900px]'
             style={{
               height: 'calc(100vh + 254px)',
             }}
           >
-            <div className='flex justify-center absolute bg-black opacity-55 w-full h-full'></div>
+            <div className='flex justify-center absolute bg-black opacity-65 w-full h-full'></div>
 
             {/* Content */}
             <div className='flex flex-col self-center items-center z-20 px-7 xs:px-16 lg:px-5'>
@@ -128,7 +126,6 @@ export default function Home() {
 
           {/* Gallery container */}
           {/* <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
-          {/* <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F4FAFF] via-[#E4EAF5] to-[#D0D7EF] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
           {/* <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
           <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] px-4 pt-16 pb-16 md:px-10 lg:pt-20 lg:pb-20'>
             <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
@@ -170,7 +167,6 @@ export default function Home() {
           <ContactBanner />
 
       </main>
-      <Footer />
     </>
   );
 }

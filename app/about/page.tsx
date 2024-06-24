@@ -15,7 +15,7 @@ export default function About() {
                             alt='Example of four web designs layered on top of each other'
                             width={1024}
                             height={782}
-                            // priority={true}
+                            priority={true}
                             className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl lg:max-h-full'
                             />
                         </div>
