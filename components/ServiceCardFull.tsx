@@ -2,24 +2,24 @@ import Link from 'next/link';
 import Image from 'next/image'
 
 type ServiceCardFullProps = {
+    id: string;
     image: string;
     icon: string;
     title: string;
     content: string;
 };
 
-export default function ServiceCardFull({ image, icon, title, content }: ServiceCardFullProps) {
+export default function ServiceCardFull({ id, image, icon, title, content }: ServiceCardFullProps) {
     return (
         <>
-            <div className='flex flex-col overflow-auto h-[620px] max-w-[550px] rounded-md shadow-xl lg:flex-row lg:max-w-screen-xl lg:h-[420px]'>
+            <div id={id} className='flex flex-col overflow-auto h-[620px] max-w-[550px] rounded-md shadow-xl lg:flex-row lg:max-w-screen-xl lg:h-[420px]'>
 
                 {/* Service image */}
                     <Image
                         src={image}
                         alt=''
-                        width={1000}
-                        height={1000}
-                        priority={true}
+                        width={2200}
+                        height={1200}
                         className='self-center object-cover rounded-t-md w-full h-1/3 lg:h-full lg:w-2/5 lg:rounded-l-md lg:rounded-tr-none'
                     />
 
@@ -31,7 +31,6 @@ export default function ServiceCardFull({ image, icon, title, content }: Service
                             alt=''
                             width={50}
                             height={50}
-                            priority={true}
                             className='self-center w-8 mr-4 lg:w-10 lg:mr-6'
                         />
                         <h2 className='self-center font-extrabold text-3xl lg:text-4xl'>{title}</h2>

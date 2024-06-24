@@ -53,7 +53,6 @@ export default function Carousel({ images = [] }: CarouselProps) {
                     alt=''
                     width={100}
                     height={100}
-                    priority={true}
                     className='self-center w-8 hover:w-full duration-100 xs:w-14 md:w-20'
                 />
             </button>
@@ -78,7 +77,6 @@ export default function Carousel({ images = [] }: CarouselProps) {
                     alt=''
                     width={100}
                     height={100}
-                    priority={true}
                     className='self-center rotate-180 w-8 hover:w-full duration-100 xs:w-14 md:w-20'
                 />
             </button>

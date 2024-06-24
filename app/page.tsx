@@ -91,10 +91,9 @@ export default function Home() {
               <div className='self-center max-w-[550px] lg:max-w-[650px] lg:h-[530px] lg:w-[60%]'>
                 <Image
                   src='/about6.png'
-                  alt=''
-                  width={1920}
-                  height={1920}
-                  priority={true}
+                  alt='Example web design images on various devices.'
+                  width={818}
+                  height={529}
                   className='self-center object-contain w-full h-full max-h-[420px] rounded-3xl lg:max-h-full'
                 />
               </div>

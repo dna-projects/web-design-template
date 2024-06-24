@@ -13,9 +13,9 @@ export default function About() {
                             <Image
                             src='/about3.png'
                             alt=''
-                            width={1920}
-                            height={1920}
-                            priority={true}
+                            width={1024}
+                            height={782}
+                            // priority={true}
                             className='self-center object-cover w-auto h-full max-h-[420px] rounded-3xl lg:max-h-full'
                             />
                         </div>

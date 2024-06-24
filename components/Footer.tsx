@@ -12,10 +12,9 @@ export default function Footer() {
                     <div className='flex justify-center self-center w-52 lg:w-64 mb-20 lg:justify-start lg:self-start'>
                         <Image
                             src='/logo-example-light.png'
-                            alt=''
-                            width={500}
-                            height={500}
-                            priority={true}
+                            alt='Company logo'
+                            width={446}
+                            height={91}
                             className=''
                         />
                     </div>
@@ -40,9 +39,15 @@ export default function Footer() {
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>SERVICES</h2>
                             <div className='w-[90px] h-0.5 bg-primary mb-3'></div>
-                            <div className='mb-3'>Service 1</div>
-                            <div className='mb-3'>Service 2</div>
-                            <div>Service 3</div>
+                            <div className='mb-3'>
+                                <Link href='/services#service1' className='duration-100 hover:text-[#A0A0A0]'>Service 1</Link>
+                            </div>
+                            <div className='mb-3'>
+                                <Link href='/services#service2' className='duration-100 hover:text-[#A0A0A0]'>Service 2</Link>
+                            </div>
+                            <div>
+                                <Link href='/services#service3' className='duration-100 hover:text-[#A0A0A0]'>Service 3</Link>
+                            </div>
                         </div>
                         <div className='flex flex-col'>
                             <h2 className='font-semibold text-lg mb-3'>CONTACT</h2>

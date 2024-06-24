@@ -12,7 +12,7 @@ export default function Contact() {
                         <ContactForm />
 
                         {/* Image container and contact information */}
-                        <div className='flex flex-col-reverse justify-between self-center w-full h-[92%] lg:flex-col lg:w-1/2'>
+                        <div className='flex flex-col-reverse justify-between self-center w-full h-[89%] lg:flex-col lg:w-1/2'>
                             <Image
                                 src='/contact-page.jpg'
                                 alt=''

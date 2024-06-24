@@ -29,18 +29,21 @@ export default function Services() {
                 {/* Service cards */}
                 <div className='flex flex-col self-center max-w-screen-xl gap-16 px-4 pb-16 lg:gap-36 lg:pb-36'>
                     <ServiceCardFull
+                        id={'service1'}
                         image={'/service-1-image2.jpg'}
                         icon={'/service-1-icon.svg'}
                         title={'Service 1'}
                         content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Sed nisi.'}
                     />
                     <ServiceCardFull
+                        id={'service2'}
                         image={'/service-2-image.jpg'}
                         icon={'/service-2-icon.svg'}
                         title={'Service 2'}
                         content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Sed nisi.'}
                     />
                     <ServiceCardFull
+                        id={'service3'}
                         image={'/service-3-image.jpg'}
                         icon={'/service-3-icon.svg'}
                         title={'Service 3'}
