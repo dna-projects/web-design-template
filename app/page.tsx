@@ -1,8 +1,10 @@
+import Navbar from '../components/Navbar'
 import ServiceCardBanner from '../components/ServiceCardBanner'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
 import ReviewCard from '../components/ReviewCard'
 import ContactBanner from '../components/ContactBanner'
+import Footer from '../components/Footer'
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -21,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <main className='flex flex-col text-[#161616]'>
 
 
@@ -167,6 +169,9 @@ export default function Home() {
           <ContactBanner />
 
       </main>
+
+      <Footer />
+
     </>
   );
 }
