@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import PrimaryButtonBorderless from './buttons/PrimaryButtonBorderless'
 
 export default function ContactBanner() {
     return (
@@ -12,9 +12,7 @@ export default function ContactBanner() {
                 <div className='flex flex-col self-center text-center z-10'>
                     <h2 className='self-center text-[35px] text-white font-extrabold tracking-tight leading-tight min-w-60 max-w-72 mb-8 px-4 md:max-w-80 md:px-0 md:text-[45px]'>Get It Done With Us Today</h2>
                     <p className='text-white max-w-[550px] mb-8'>Have questions? Our team is just a click away. Fill out our contact form today and let us assist you in achieving your goals.</p>
-                    <Link href='/contact' className='self-center'>
-                        <button className='border-2 border-primary bg-primary font-bold w-[175px] px-5 py-3 hover:bg-white hover:border-white duration-200'>GET IN TOUCH</button>
-                    </Link>
+                    <PrimaryButtonBorderless href={'/contact'} label={'GET IN TOUCH'} />
                 </div>
 
             </div>

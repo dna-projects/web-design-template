@@ -1,3 +1,5 @@
+import SecondaryButton from './buttons/SecondaryButton'
+
 import Link from 'next/link';
 import Image from 'next/image'
 
@@ -41,9 +43,12 @@ export default function ServiceCardFull({ id, image, icon, title, content }: Ser
                         </div>
                         <div className='text-neutral-500 min-w-[240px] mt-4'>{content}</div>
                     </div>
-                    <Link href='/contact' className='self-center w-[175px] lg:self-start'>
-                        <button className='border-2 border-[#161616] bg-[#161616] text-white font-semibold w-full py-3 hover:bg-transparent hover:text-[#161616] duration-200'>GET A QUOTE</button>
-                    </Link>
+
+                    {/* Button to redirect to Contact page */}
+                    <div className='self-center lg:self-start'>
+                        <SecondaryButton href={'/contact'} label={'GET A QUOTE'} />
+                    </div>
+
                 </div>
             </div>
         </>

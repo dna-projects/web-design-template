@@ -1,5 +1,8 @@
 import Navbar from '../components/Navbar'
 import ServiceCardBanner from '../components/ServiceCardBanner'
+import PrimaryButton from '../components/buttons/PrimaryButton'
+import PrimaryButtonBorderless from '../components/buttons/PrimaryButtonBorderless'
+import SecondaryButton from '../components/buttons/SecondaryButton'
 import LayeredImages from '../components/LayeredImages'
 import Carousel from '../components/Carousel'
 import ReviewCard from '../components/ReviewCard'
@@ -47,11 +50,9 @@ export default function Home() {
 
             {/* Buttons */}
             <div className='flex flex-col justify-center self-center gap-3 z-20 mt-14 pb-64 xs:flex-row'>
-              <Link href='/about'>
-                <button className='border border-primary bg-primary font-bold w-[165px] py-3 hover:bg-white hover:border-white duration-200'>LEARN MORE</button>
-              </Link>
+              <PrimaryButtonBorderless href={'/about'} label={'LEARN MORE'} />
               <Link href='/contact'>
-                <button className='border border-primary text-white font-semibold w-[165px] py-3 hover:bg-white hover:text-black hover:border-white duration-200'>Get in Touch</button>
+                <button className='border border-primary text-white font-semibold w-[170px] py-3 hover:bg-white hover:text-black hover:border-white duration-200'>Get in Touch</button>
               </Link>
             </div>
           </div>
@@ -99,12 +100,12 @@ export default function Home() {
               </div>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>ABOUT US</div>
-                <h2 className='text-[33px] font-extrabold xl:text-[45px]'>Company Name</h2>
-                <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
-                <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
-                <Link href='/about' className='w-[175px]'>
-                  <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>LEARN MORE</button>
-                </Link>
+                <h2 className='text-[33px] font-extrabold mb-5 xl:text-[45px]'>Company Name</h2>
+                <p className='text-neutral-600 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+                <p className='text-neutral-600 mb-9'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
+                <div className='self-start'>
+                  <PrimaryButton href={'/about'} label={'LEARN MORE'} />
+                </div>
               </div>
             </div>
 
@@ -112,12 +113,12 @@ export default function Home() {
             <div className='flex flex-col-reverse mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-[70px]'>
               <div className='flex flex-col self-center max-w-[550px] lg:w-1/2 lg:max-w-none'>
                 <div className='font-semibold tracking-wider'>SEO RANKING</div>
-                <h2 className='text-[33px] font-extrabold xl:text-[45px]'>Main Service Keyword</h2>
-                <p className='text-neutral-600 mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                <p className='text-neutral-600 mt-5'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</p>
-                <Link href='/about' className='w-[175px]'>
-                  <button className='border-2 border-primary bg-primary font-bold w-full mt-9 py-3 hover:bg-white hover:border-primary duration-200'>OUR SERVICES</button>
-                </Link>
+                <h2 className='text-[33px] font-extrabold mb-5 xl:text-[45px]'>Main Service Keyword</h2>
+                <p className='text-neutral-600 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+                <p className='text-neutral-600 mb-9'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</p>
+                <div className='self-start'>
+                  <PrimaryButton href={'/services'} label={'OUR SERVICES'} />
+                </div>
               </div>
               <LayeredImages />
             </div>
@@ -127,15 +128,13 @@ export default function Home() {
 
 
           {/* Gallery container */}
-          {/* <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F4FAFF] via-[#E5E8F2] to-[#EFE5F2] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
-          {/* <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F1F8FF] via-[#DBE7F4] to-[#8B9AB9] px-4 pt-16 pb-16 md:px-10 lg:pt-24 lg:pb-24'> */}
           <div className='flex flex-col self-center text-center w-full bg-gradient-to-r from-[#F9FDFF] via-[#BCD6E4] to-[#6B7E8F] px-4 pt-16 pb-16 md:px-10 lg:pt-20 lg:pb-20'>
-            <div className='font-semibold tracking-wider'>OUR PORTFOLIO</div>
-            <h2 className='self-center text-[33px] font-extrabold mt-2 mb-16 max-w-[400px] leading-tight lg:mb-20 xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</h2>
+            <div className='font-semibold tracking-wider mb-2'>OUR PORTFOLIO</div>
+            <h2 className='self-center text-[33px] font-extrabold max-w-[400px] leading-tight mb-16 lg:mb-20 xl:text-[45px] xl:max-w-[500px]'>Innovative Solutions in Every Project</h2>
             <Carousel images={images} />
-            <Link href='/gallery' className='self-center w-[175px] mt-6 lg:mt-12'>
-              <button className='border-2 border-[#161616] bg-[#161616] text-white font-semibold w-full py-3 hover:bg-transparent hover:text-[#161616] duration-200'>FULL GALLERY</button>
-            </Link>
+            <div className='mt-6 lg:mt-12'>
+              <SecondaryButton href={'/gallery'} label={'FULL GALLERY'} />
+            </div>
           </div>
 
 
@@ -146,8 +145,8 @@ export default function Home() {
 
             {/* Reviews container */}
             <div className='flex flex-col self-center text-center'>
-              <div className='font-semibold tracking-wider'>OUR REVIEWS</div>
-              <h2 className='self-center text-[33px] font-extrabold mt-2 mb-16 leading-tight lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</h2>
+              <div className='font-semibold tracking-wider mb-2'>OUR REVIEWS</div>
+              <h2 className='self-center text-[33px] font-extrabold leading-tight mb-16 lg:mb-20 xl:text-[45px]'>What Our Customers Have to Say</h2>
 
               {/* Cards */}
               <div className='flex flex-col self-center gap-8 max-w-xl lg:flex-row lg:max-w-full lg:gap-4'>
