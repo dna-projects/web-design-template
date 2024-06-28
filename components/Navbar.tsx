@@ -9,7 +9,6 @@ import Link from 'next/link';
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
 
-
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const currentPath = usePathname()
@@ -20,8 +19,8 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className='flex flex-row justify-center fixed w-full bg-white shadow-lg z-50'>
-                <div className='flex flex-row w-full max-w-screen-xl'>
+            <nav className='flex justify-center fixed w-full bg-white shadow-lg z-50'>
+                <div className='flex w-full max-w-screen-xl'>
 
                     {/* Logo */}
                     <Link href='/' className='flex justify-center ml-4 w-[170px] min-w-[120px] min-h-[77px] 2xl:w-[200px]'>
@@ -29,7 +28,7 @@ export default function Navbar() {
                             src='/logo-example-dark.png'
                             alt='Company logo'
                             width={446}
-                            height={100}
+                            height={91}
                             priority={true}
                             className='self-center mt-1.5'
                         />
@@ -53,10 +52,6 @@ export default function Navbar() {
                             <div>Gallery</div>
                             <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/gallery' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
                         </Link>
-                        {/* <Link href='/reviews' className={`group flex flex-col ${currentPath === '/reviews' ? 'active' : ''}`}>
-                            <div>Reviews</div>
-                            <div className={`h-0.5 bg-primary transition-width duration-300 ${currentPath === '/reviews' ? 'w-full' : 'w-0 group-hover:w-full'}`}></div>
-                        </Link> */}
                     </div>
 
                     {/* Contact button */}
@@ -71,6 +66,7 @@ export default function Navbar() {
                     >
                         <HamburgerButton isOpen={isOpen} toggleSideBar={toggleSideBar} />
                     </div>
+
                 </div>
             </nav>
 
