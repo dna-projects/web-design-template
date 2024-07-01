@@ -3,7 +3,7 @@ import SecondaryButton from './buttons/SecondaryButton'
 import Link from 'next/link';
 import Image from 'next/image'
 
-type ServiceCardFullProps = {
+type ServiceCardProps = {
     id: string;
     image: string;
     icon: string;
@@ -11,7 +11,7 @@ type ServiceCardFullProps = {
     content: string;
 };
 
-export default function ServiceCardFull({ id, image, icon, title, content }: ServiceCardFullProps) {
+export default function ServiceCard({ id, image, icon, title, content }: ServiceCardProps) {
     return (
         <>
             <div
@@ -31,17 +31,17 @@ export default function ServiceCardFull({ id, image, icon, title, content }: Ser
                 {/* Service content */}
                 <div className='flex flex-col justify-between h-full p-6 py-10 xs:px-14 xs:py-14'>
                     <div className='flex flex-col'>
-                        <div className='flex flex-row'>
+                        <div className='flex flex-row mb-4'>
                             <Image
                                 src={icon}
                                 alt='Icon related to the service'
                                 width={50}
                                 height={50}
-                                className='self-center w-8 mr-4 lg:w-10 lg:mr-6'
+                                className='self-center w-8 lg:w-10'
                             />
-                            <h2 className='self-center font-extrabold text-3xl lg:text-4xl'>{title}</h2>
+                            <h2 className='self-center font-extrabold text-3xl ml-4 lg:text-4xl lg:ml-6'>{title}</h2>
                         </div>
-                        <div className='text-neutral-500 min-w-[240px] mt-4'>{content}</div>
+                        <div className='text-neutral-500 min-w-[240px]'>{content}</div>
                     </div>
 
                     {/* Button to redirect to Contact page */}
