@@ -26,7 +26,9 @@ export default function Home() {
 
   return (
     <>
+
       <Navbar />
+
       <main className='flex flex-col text-[#161616]'>
 
 
@@ -36,20 +38,22 @@ export default function Home() {
           <div
             className='hero-image flex flex-col justify-center relative h-screen min-h-[900px]'
             style={{
-              height: 'calc(100vh + 254px)',
+              height: 'calc(100vh + 250px)',
             }}
           >
-            <div className='flex justify-center absolute bg-black opacity-65 w-full h-full'></div>
+
+            {/* Black opacity layer */}
+            <div className='absolute bg-black opacity-65 w-full h-full'></div>
 
             {/* Content */}
-            <div className='flex flex-col self-center items-center z-20 px-7 xs:px-16 lg:px-5'>
-              <div className='text-center text-primary font-bold tracking-wider'>ELEVATE YOUR BUSINESS</div>
-              <h1 className='text-center text-[32px] text-white font-extrabold leading-tight tracking-tighter max-w-[600px] mt-7 md:text-[45px]'>Unlock your Online Potential with Stunning Websites</h1>
-              <p className='text-center text-white mt-7'>Our talented designers craft pixel-perfect websites that enhance your brand&apos;s digital footprint.</p>
+            <div className='flex flex-col items-center z-20 px-7 xs:px-16 lg:px-5'>
+              <div className='text-center text-primary font-bold tracking-wider mb-7'>ELEVATE YOUR BUSINESS</div>
+              <h1 className='text-center text-[32px] text-white font-extrabold leading-tight tracking-tighter max-w-[600px] mb-7 md:text-[45px]'>Unlock your Online Potential with Stunning Websites</h1>
+              <p className='text-center text-white mb-14'>Our talented designers craft pixel-perfect websites enhancing your brand&apos;s digital footprint.</p>
             </div>
 
             {/* Buttons */}
-            <div className='flex flex-col justify-center self-center gap-3 z-20 mt-14 pb-64 xs:flex-row'>
+            <div className='flex flex-col self-center gap-3 z-20 mb-64 xs:flex-row'>
               <PrimaryButtonBorderless href={'/about'} label={'LEARN MORE'} />
               <Link href='/contact'>
                 <button className='border border-primary text-white font-semibold w-[170px] py-3 hover:bg-white hover:text-black hover:border-white duration-200'>Get in Touch</button>
@@ -60,9 +64,9 @@ export default function Home() {
 
 
 
-          {/* Service cards container */}
-          <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl z-20 -mt-[230px] lg:-mt-[300px] lg:pt-36 lg:pb-0'>
-            <div className='flex flex-col self-center gap-8 max-w-xl lg:flex-row lg:max-w-full'>
+          {/* Transition container (Service card banner) */}
+          <div className='flex flex-col self-center px-4 mb-16 max-w-screen-xl z-20 -mt-[160px] lg:mb-0'>
+            <div className='flex flex-col gap-8 max-w-xl lg:flex-row lg:max-w-full'>
               <ServiceCardBanner
                 icon={'/service-1-icon.svg'}
                   title={'Service 1'}
@@ -84,8 +88,8 @@ export default function Home() {
 
 
 
-          {/* Rest of content container - first half */}
-          <div className='flex flex-col self-center gap-32 px-4 py-16 max-w-screen-xl lg:gap-36 lg:py-36'>
+          {/* Content container - first half */}
+          <div className='flex flex-col self-center gap-32 px-4 my-16 max-w-screen-xl lg:gap-36 lg:my-36'>
 
             {/* About section */}
             <div className='flex flex-col mx-auto gap-12 lg:flex-row 2xl:px-0 xl:gap-[70px]'>
@@ -140,8 +144,8 @@ export default function Home() {
 
 
 
-          {/* Rest of content container - second half */}
-          <div className='flex flex-col self-center px-4 py-16 max-w-screen-xl lg:py-36'>
+          {/* Content container - second half */}
+          <div className='flex flex-col self-center px-4 my-16 max-w-screen-xl lg:my-36'>
 
             {/* Reviews container */}
             <div className='flex flex-col self-center text-center'>
