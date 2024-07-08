@@ -1,3 +1,6 @@
+import Socials from './Socials'
+
+
 import Link from 'next/link';
 import Image from 'next/image'
 
@@ -8,14 +11,21 @@ export default function Footer() {
 
                 {/* Logo and content */}
                 <div className='flex flex-col justify-between self-center w-full max-w-screen-xl lg:flex-row'>
-                    {/* Logo */}
-                    <div className='flex justify-center self-center w-52 lg:w-64 mb-20 lg:justify-start lg:self-start'>
+                    {/* Logo and socials */}
+                    <div className='flex flex-col self-center w-52 lg:w-64 mb-20 lg:justify-start lg:self-start'>
                         <Image
                             src='/logo-example-light.png'
                             alt='Company logo'
                             width={446}
                             height={91}
+                            className='mb-5 lg:mb-7'
                         />
+                        <div className='flex justify-center gap-3 lg:justify-start'>
+                            <Socials link={'https://www.facebook.com/'} src={'/icon-facebook.svg'} alt={'Facebook icon'} />
+                            <Socials link={'https://www.instagram.com/'} src={'/icon-instagram.svg'} alt={'Instagram icon'} />
+                            <Socials link={'https://www.tiktok.com/'} src={'/icon-tiktok.svg'} alt={'Tik Tok icon'} />
+                            <Socials link={'https://x.com/'} src={'/icon-x.svg'} alt={'X icon'} />
+                        </div>
                     </div>
                     {/* Footer content */}
                     <div className='flex flex-wrap justify-between self-center w-full max-w-[320px] sm:max-w-[600px] gap-14 md:flex-row'>
@@ -65,7 +75,7 @@ export default function Footer() {
                 {/* DNA Labs info */}
                 <div className='flex flex-col self-center text-center lg:flex-row'>
                     <div>Designed and Developed by <span className='text-primary mr-1'>DNA Labs Web Designs</span></div>
-                    <div>Copyright 2023 - Present</div>
+                    <div>Copyright 2024 - Present</div>
                 </div>
             </div>
         </>
