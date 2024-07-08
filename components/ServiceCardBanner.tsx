@@ -10,7 +10,7 @@ type ServiceCardBannerProps = {
 export default function ServiceCardBanner({ icon, title, content }: ServiceCardBannerProps) {
     return (
         <>
-            <div className='flex flex-col justify-center bg-white w-full h-[320px] border-t-[6px] border-primary rounded-md shadow-lg p-5'>
+            <div className='flex flex-col justify-center bg-white w-full h-[320px] border-t-[6px] border-primary rounded-md shadow-xl p-5'>
 
                 {/* Service icon */}
                     <Image

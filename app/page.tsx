@@ -65,7 +65,7 @@ export default function Home() {
 
 
           {/* Transition container (Service card banner) */}
-          <div className='flex flex-col self-center px-4 mb-16 max-w-screen-xl z-20 -mt-[160px] lg:mb-0'>
+          <div className='flex flex-col self-center max-w-screen-xl z-20 px-4 mb-16 -mt-[160px] lg:mb-0'>
             <div className='flex flex-col gap-8 max-w-xl lg:flex-row lg:max-w-full'>
               <ServiceCardBanner
                 icon={'/service-1-icon.svg'}
@@ -162,7 +162,7 @@ export default function Home() {
                 <ReviewCard
                   name={'Jane D.'}
                   quote={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-                  stars={5}
+                  stars={4.5}
                 />
               </div>
             </div>

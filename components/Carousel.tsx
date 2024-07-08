@@ -63,7 +63,7 @@ export default function Carousel({ images = [] }: CarouselProps) {
                     {images.map((image, index) => (
                         <div key={index} className='w-[93%] flex-shrink-0 xs:w-[100%] lg:w-[48%] xl:w-[31.5%]'>
                             <Link href='/gallery' >
-                                <img src={image} alt={`Slide ${index}`} className='w-full h-[450px] object-cover rounded-3xl shadow-lg mb-8 mx-3 xs:mx-0' />
+                                <img src={image} alt={`Slide ${index}`} className='w-full h-[450px] object-cover rounded-3xl shadow-xl mb-8 mx-3 xs:mx-0' />
                             </Link>
                         </div>
                     ))}
